@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-
-const Home = () => {
-    return(
-        <div>
-            <h1>Mon Portfolio</h1>
-        </div>
-    )
-=======
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const Home = () => {
@@ -51,7 +42,6 @@ const Home = () => {
       </section>
     </div>
   )
->>>>>>> dev
 };
 
 export default Home;
