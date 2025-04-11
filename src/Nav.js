@@ -5,10 +5,19 @@ import { Link } from "react-router-dom";
 export default class Nav extends Component {
   render() {
     return (
+<<<<<<< HEAD
       <div className="container-fluid gx-0 text-uppercase">
         <nav className="navbar navbar-expand-lg bg-gradient bg-secondary shadow px-5 fixed-top">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">Romain Jeanniot</Link>
+=======
+      <header className="container-fluid gx-0 text-uppercase">
+        <nav className="navbar navbar-expand-lg bg-dark bg-gradient navbar-dark shadow px-5 fixed-top">
+          <div className="container-fluid">
+            <Link className="navbar-brand" to="/">
+              <img src="./images/favicon_io/favicon-32x32.png" alt="Bootstrap" width="30" height="24" />
+            </Link>
+>>>>>>> dev
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +42,13 @@ export default class Nav extends Component {
             </div>
           </div>
         </nav>
+<<<<<<< HEAD
       </div>
     )
     }
+=======
+      </header>
+    )
+  }
+>>>>>>> dev
 }
