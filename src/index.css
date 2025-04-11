@@ -11,7 +11,6 @@ body {
 
 h1, h2, h3, strong{font-weight: 600;}
 strong{font-size: 3em;}
-footer h3, footer strong {font-size: 1.1em;}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -23,3 +22,9 @@ code {
   background-size: cover;
   height: 80vh;
 }
+
+footer h3, footer strong {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+address p{margin-bottom: 0;}
