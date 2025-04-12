@@ -1,6 +1,4 @@
 
-
-
 export default function Header(props) {
     return (
       <div className="d-flex flex-wrap justify-content-center">

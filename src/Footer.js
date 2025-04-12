@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
+import Address from "./Address";
 
 export default class Footer extends Component {
   render() {
@@ -8,13 +9,7 @@ export default class Footer extends Component {
         <div className="container p-4">
           <div className="row text-white">
             <div className="col-md-4">
-              <address>
-                <p><strong>Romain Jeanniot</strong></p>
-                <p>1 rue du Paradis</p>
-                <p>75000 PARIS</p>
-                <p>+33 6 20 30 40 50</p>
-                <p>romainjeanniot@dev.com</p>
-              </address>
+              <Address />
             </div>
             <nav className="col-md-4">
               <h3>Liens utiles</h3>
