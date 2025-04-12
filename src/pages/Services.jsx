@@ -41,7 +41,7 @@ const Services = () => {
             visiteurs qualifiés sur le site."/>
           </div>
         </div>
-    </div>
+      </div>
     )
 };
 
