@@ -15,7 +15,7 @@ const Home = () => {
         <div id="about" className="row rounded-4 shadow p-4">
           <div className="col-md-6">
             <h2 className="border-bottom border-primary border-3">A propos</h2>
-            <img className="img-fluid rounded-3 my-4" src="./images/john-doe-about.jpg" alt=""></img>
+            <img className="img-fluid rounded-3 my-4" src="./images/john-doe-about.jpg" alt="john doe bureau"></img>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem 
               perferendis non, vel in est, possimus commodi veritatis nobis, amet 
               incidunt in iure voluptatem atque! Tenetur, quia?
