@@ -1,8 +1,10 @@
+import Header from "../Header";
 
 const Portfolio = () => {
     return(
         <div>
-            <h1>Portfolio</h1>
+            <Header title="Mon portfolio"
+            description="Voici quelques unes de mes réalisations"/>
         </div>
     )
 };

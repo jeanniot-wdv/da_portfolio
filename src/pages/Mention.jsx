@@ -1,8 +1,10 @@
+import Header from "../Header";
 
 const Mention = () => {
     return(
         <div>
-            <h1>Mentions légales</h1>
+            <Header title="Mentions légales"
+            description=""/>
         </div>
     )
 };
