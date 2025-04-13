@@ -13,23 +13,23 @@ const Contact = () => {
           <div className="col-md-6">
             <h2 className="border-bottom border-primary border-3 mb-4">Formulaire de contact</h2>
             <form>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Votre nom"/>
+              <div className="mb-3">
+                <input type="text" className="form-control" id="name" placeholder="Votre nom" required/>
               </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Votre adresse email"/>
+              <div className="mb-3">
+                <input type="email" className="form-control" id="email" placeholder="Votre adresse email" required/>
               </div>
-              <div class="mb-3">
-                <input type="tel" class="form-control" id="phone" placeholder="Votre numéro de téléphone"/>
+              <div className="mb-3">
+                <input type="tel" className="form-control" id="phone" placeholder="Votre numéro de téléphone" pattern="0[0-9]{9}"required/>
               </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="subject" placeholder="Sujet"/>
+              <div className="mb-3">
+                <input type="text" className="form-control" id="subject" placeholder="Sujet" required/>
               </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="message" rows="8" placeholder="Votre message"/>
+              <div className="mb-3">
+                <textarea className="form-control" id="message" rows="8" placeholder="Votre message" required/>
               </div>
               <div className="d-flex mx-auto">
-                <button type="" class="btn btn-primary mx-auto">Envoyer</button>
+                <button type="" className="btn btn-primary mx-auto">Envoyer</button>
               </div>
             </form>
           </div>
