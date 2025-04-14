@@ -39,7 +39,6 @@ const Contact = () => {
             <h2 className="border-bottom border-primary border-3 mb-4">Mes coordonnées</h2>
             <Address />
             <div id="google-map"><MyMap /></div>
-            
           </div>
         </div> 
       </section>
