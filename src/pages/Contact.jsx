@@ -1,5 +1,6 @@
 import Header from "../Header";
 import Address from "../Address";
+import MyMap from "../Maps";
 
 const Contact = () => {
   return(
@@ -34,10 +35,11 @@ const Contact = () => {
             </form>
           </div>
 
-          <div id="map" className="col-md-6">
+          <div id="" className="col-md-6">
             <h2 className="border-bottom border-primary border-3 mb-4">Mes coordonnées</h2>
             <Address />
-
+            <div id="google-map"><MyMap /></div>
+            
           </div>
         </div> 
       </section>

@@ -38,3 +38,8 @@ footer h3, footer strong {
   font-size: 1.1em;
   margin-bottom: 0;
 }
+
+#google-map{
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
