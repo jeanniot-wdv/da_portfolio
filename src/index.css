@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, strong{font-weight: 600;}
-strong{font-size: 3em;}
+h3, strong{font-size: 1.2em;}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -23,23 +23,20 @@ code {
   background-size: cover;
   height: 80vh;
 }
-address p{margin-bottom: 0;}
+#intro strong{font-size: 3em;}
 
- /******* SERVICES *******/
+/******* SERVICES *******/
 #services i{font-size: 2em;}
 #services h2{font-size: 1.5em;}
 
 /******* CONTACT *******/
-#map strong{
-  font-size: 1.3em;
-}
- /******* FOOTER *******/
-footer h3, footer strong {
-  font-size: 1.1em;
-  margin-bottom: 0;
-}
-
 #google-map{
   aspect-ratio: 4 / 3;
   width: 100%;
 }
+
+/******* FOOTER *******/
+footer h3,
+footer strong,
+address p{margin-bottom: 0;}
+address i{margin-right: 10px;}
