@@ -4,15 +4,15 @@ import Header from "../Header";
 const CardProject = (props) => {
   return (
     <div className="col">
-        <div class="card h-100">
-          <img src={props.image} class="card-img-top" alt={props.image} />
-          <div class="card-body">
-            <h5 class="card-title">{props.title}</h5>
-            <p class="card-text">{props.description}</p>
-            <Link to={props.site} class="btn btn-primary">Voir le site</Link>
+        <div className="card h-100">
+          <img src={props.image} className="card-img-top" alt={props.image} />
+          <div className="card-body">
+            <h5 className="card-title">{props.title}</h5>
+            <p className="card-text">{props.description}</p>
+            <Link to={props.site} className="btn btn-primary">Voir le site</Link>
           </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">{props.cardFooter}</small>
+          <div className="card-footer">
+            <small className="text-body-secondary">{props.cardFooter}</small>
           </div>
         </div>
     </div>

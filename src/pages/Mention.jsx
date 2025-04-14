@@ -21,7 +21,7 @@ const Mention = () => {
               <address>
                 <h3>Alwaysdata</h3>
                 <p>91 Rue du Faubourg Saint-Honoré, 75008 Paris</p>
-                <p><i class="fa-solid fa-globe"></i> <Link to="https://www.alwaysdata.com" target="_blank">www.alwaysdata.com</Link></p>
+                <p><i className="fa-solid fa-globe"></i> <Link to="https://www.alwaysdata.com" target="_blank">www.alwaysdata.com</Link></p>
               </address>
             </Accordion.Body>
           </Accordion.Item>
