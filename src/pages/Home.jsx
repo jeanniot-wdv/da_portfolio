@@ -3,7 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 const Home = () => {
   return(
     <div>
-      <section className="container-fluid bg-image d-flex justify-content-center align-items-center">
+      <section id="intro" className="container-fluid bg-image d-flex justify-content-center align-items-center">
         <div className="text-white text-center">
           <p><strong>Bonjour, je suis Romain Jeanniot</strong></p>
           <h1>Développeur web Fullstack</h1>

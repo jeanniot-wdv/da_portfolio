@@ -1,4 +1,4 @@
-import Header from "../Header";
+import { Link } from "react-router-dom";import Header from "../Header";
 import Address from "../Address";
 import Accordion from 'react-bootstrap/Accordion';
 
@@ -8,34 +8,31 @@ const Mention = () => {
       <Header title="Mentions légales"
       description=""/>
       <div className="container pb-4">
+
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Editeur du site</Accordion.Header>
-            <Accordion.Body>
-              <Address />
-            </Accordion.Body>
+            <Accordion.Body><Address /></Accordion.Body>
           </Accordion.Item>
+
           <Accordion.Item eventKey="1">
             <Accordion.Header>Hébergeur</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              <address>
+                <h3>Alwaysdata</h3>
+                <p>91 Rue du Faubourg Saint-Honoré, 75008 Paris</p>
+                <p><i class="fa-solid fa-globe"></i> <Link to="https://www.alwaysdata.com" target="_blank">www.alwaysdata.com</Link></p>
+              </address>
             </Accordion.Body>
-          </Accordion.Item><Accordion.Item eventKey="2">
+          </Accordion.Item>
+
+          <Accordion.Item eventKey="2">
             <Accordion.Header>Crédits</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              <h2>Crédits</h2>
+              <p>Ce site a été réalisé par Romain Jeanniot, étudiant au <Link to="https://www.centre-europeen-formation.fr/" target="_blank">Centre Européen de formation</Link></p>
+              <p><em>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <Link to="https://pixabay.com/fr/" target="_blank">Pixabay</Link></em></p>
+              <p><em>La ravicon de ce site a été fournie par <Link to="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="_blank">John de Icons erstellt von Freepik - Flaticon</Link></em></p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
