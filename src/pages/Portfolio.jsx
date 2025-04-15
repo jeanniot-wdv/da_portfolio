@@ -3,30 +3,30 @@ import Header from "../Header";
 
 const CardProject = (props) => {
   return (
-    <div className="col">
+    <article className="col">
         <div className="card h-100">
           <img src={props.image} className="card-img-top" alt={props.image} />
           <div className="card-body">
-            <h5 className="card-title">{props.title}</h5>
+            <h2 className="card-title fs-5">{props.title}</h2>
             <p className="card-text">{props.description}</p>
-            <Link to={props.site} className="btn btn-primary">Voir le site</Link>
+            <Link to={props.site} className="btn btn-primary link-opacity-75-hover">Voir le site</Link>
           </div>
           <div className="card-footer">
             <small className="text-body-secondary">{props.cardFooter}</small>
           </div>
         </div>
-    </div>
+    </article>
   )
 }
 
 const Portfolio = () => {
   return(
-    <div>
+    <section>
       <Header title="Mon portfolio"
       description="Voici quelques unes de mes réalisations"/>
 
       <div className="container"> 
-        <div id="portofolio" className="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center gy-4 mb-4">
+        <section id="portfolio" className="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center gy-4 mb-4">
           <CardProject 
             image="./images/portfolio/fresh-food.jpg" 
             title="Fresh Food" 
@@ -68,9 +68,9 @@ const Portfolio = () => {
             description="Création du prototype d'un site web" 
             site="" 
             cardFooter="Réalisé avec FIGMA"/>
-        </div>
+        </section>
       </div>
-    </div>
+    </section>
 
     
   )
