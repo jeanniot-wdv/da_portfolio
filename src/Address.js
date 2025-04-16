@@ -11,11 +11,6 @@ export default function Address() {
         <Link to="mailto: romainjeanniot@dev.com" 
         className="link-offset-2 link-light link-underline-opacity-25 link-underline-opacity-100-hover">romainjeanniot@dev.com</Link>
       </p>
-      <div id="socials" className="d-flex fs-3 mt-2 column-gap-1">
-        <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-github"></i></Link>
-        <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-twitter-x"></i></Link>
-        <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-linkedin"></i></Link>
-      </div>
     </address>
   )
 }

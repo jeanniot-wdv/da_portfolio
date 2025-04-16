@@ -7,7 +7,14 @@ export default class Footer extends Component {
     return (
       <footer className="container-fluid bg-dark bg-gradient navbar-dark p-4">
         <div className="d-flex text-white justify-content-around">
-          <Address />
+          <div>
+            <Address />
+            <div id="socials" className="d-flex fs-3 column-gap-3">
+              <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-github"></i></Link>
+              <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-twitter-x"></i></Link>
+              <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-linkedin"></i></Link>
+            </div>
+          </div>
           <nav className="">
             <h3 className="fs-5 lh-base">Liens utiles</h3>
             <ul className="navbar-nav">

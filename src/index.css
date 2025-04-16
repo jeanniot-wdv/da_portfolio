@@ -26,6 +26,7 @@ code {
 #progress p{margin: 15px 0 0 0;}
 
 /******* CONTACT *******/
+#location a{color: black !important;}
 #google-map{
   aspect-ratio: 4 / 3;
   width: 100%;
