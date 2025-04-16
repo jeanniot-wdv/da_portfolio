@@ -10,7 +10,6 @@ body {
 }
 
 h1, h2, h3, strong{font-weight: 600;}
-h3, strong{font-size: 1.2em;}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,18 +25,20 @@ code {
 #intro strong{font-size: 3em;}
 #progress p{margin: 15px 0 0 0;}
 
-/******* SERVICES *******/
-#services i{font-size: 2em;}
-#services h2{font-size: 1.5em;}
-
 /******* CONTACT *******/
+#location a{color: black !important;}
 #google-map{
   aspect-ratio: 4 / 3;
   width: 100%;
 }
 
 /******* FOOTER *******/
-footer h3,
-footer strong,
 address p{margin-bottom: 0;}
 address i{margin-right: 10px;}
+
+/******* EFFECTS *******/
+.card:hover{
+  background-color: #efefef;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px gray;
+}
