@@ -1,4 +1,4 @@
-import Header from "../Header";
+import Header from "../components/Header";
 
 const Card = (props) => {
   const icon = "fs-1 bi bi-"+ props.iconName;

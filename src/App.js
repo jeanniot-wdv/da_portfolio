@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import Nav from "./Nav";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
