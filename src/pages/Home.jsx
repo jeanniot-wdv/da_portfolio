@@ -1,5 +1,6 @@
 import { useState , useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [userData, setUserData] = useState([]); 
@@ -30,13 +31,30 @@ const Home = () => {
 
         <div className="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content bg-dark text-white">
+            <div className="modal-content bg-black bg-opacity-75 text-white">
               <div className="modal-header">
                 <h1 className="modal-title fs-5" id="exampleModalLabel">Mon profil GitHub</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <h3>{userData.name}</h3>
+                <div className='container-fluid'>
+                  <div className='row'>
+                    <div className='col-md-6'>
+                      <img className="img-fluid rounded-5 my-4" src={userData.avatar_url} alt=''/>
+                    </div>
+                    <div className='col-md-6'>
+                      <p className='border-bottom mt-4 pb-2'>
+                        <i class="bi bi-person"></i> 
+                        <Link to="https://github.com/jeanniot-wdv" target='_blank'>{userData.name}</Link>
+                      </p>
+                      <p className='border-bottom pb-2'><i class="bi bi-geo-alt"></i> {userData.location}</p>
+                      <p className='border-bottom pb-2'><i class="bi bi-card-heading"></i> {userData.bio}</p>
+                      <p className='border-bottom pb-2'><i class="bi bi-box"></i> Repositories : </p>
+                      <p className='border-bottom pb-2'><i class="bi bi-people"></i> Followers : </p>
+                      <p><i class="bi bi-people"></i> Following : </p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
