@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
 
-    const  fetchUserData = async() => { 
+    const  getUserData = async() => { 
       const res = await  fetch("https://api.github.com/users/jeanniot-wdv");
       const data = await res.json(); 
       const resRepo = await  fetch("https://api.github.com/users/jeanniot-wdv/repos");
@@ -24,11 +24,8 @@ const Home = () => {
       setUserDataFollo(dataFollo); 
       setUserDataFllg(dataFllg); 
       }; 
-    fetchUserData (); 
+    getUserData (); 
 
-    return  () => { 
-      // Code de nettoyage (si nécessaire)
-     }; 
     }, []);
 
   return(

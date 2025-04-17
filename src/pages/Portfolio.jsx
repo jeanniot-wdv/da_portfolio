@@ -9,7 +9,7 @@ const CardProject = (props) => {
           <div className="card-body">
             <h2 className="card-title fs-5">{props.title}</h2>
             <p className="card-text">{props.description}</p>
-            <Link to={props.site} className="btn btn-primary link-opacity-75-hover">Voir le site</Link>
+            <Link to={props.site} className="btn btn-primary">Voir le site</Link>
           </div>
           <div className="card-footer">
             <small className="text-body-secondary">{props.cardFooter}</small>
