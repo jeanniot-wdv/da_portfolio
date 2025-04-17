@@ -4,21 +4,32 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [userData, setUserData] = useState([]); 
+  const [userDataRepo, setUserDataRepo] = useState([]); 
+  const [userDataFollo, setUserDataFollo] = useState([]); 
+  const [userDataFllg, setUserDataFllg] = useState([]); 
 
   useEffect(() => {
 
     const  fetchUserData = async() => { 
-      const res = await  fetch("https://api.github.com/users/jeanniot-wdv"); 
+      const res = await  fetch("https://api.github.com/users/jeanniot-wdv");
       const data = await res.json(); 
+      const resRepo = await  fetch("https://api.github.com/users/jeanniot-wdv/repos");
+      const dataRepo = await resRepo.json(); 
+      const resFollo = await  fetch("https://api.github.com/users/jeanniot-wdv/followers");
+      const dataFollo = await resFollo.json(); 
+      const resFllg = await  fetch("https://api.github.com/users/jeanniot-wdv/following");
+      const dataFllg = await resFllg.json(); 
       setUserData(data); 
+      setUserDataRepo(dataRepo); 
+      setUserDataFollo(dataFollo); 
+      setUserDataFllg(dataFllg); 
       }; 
-
     fetchUserData (); 
 
     return  () => { 
       // Code de nettoyage (si nécessaire)
      }; 
-  }, []); 
+    }, []);
 
   return(
     <div>
@@ -29,11 +40,11 @@ const Home = () => {
           <button type="button" className="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">En savoir plus</button>
         </div>
 
-        <div className="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade border-opacity-25" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content bg-black bg-opacity-75 text-white">
-              <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalLabel">Mon profil GitHub</h1>
+              <div className="modal-header  border-0" data-bs-theme="dark">
+                <h1 className="modal-title fs-5" id="modalLabel">Mon profil GitHub</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -49,15 +60,15 @@ const Home = () => {
                       </p>
                       <p className='border-bottom pb-2'><i class="bi bi-geo-alt"></i> {userData.location}</p>
                       <p className='border-bottom pb-2'><i class="bi bi-card-heading"></i> {userData.bio}</p>
-                      <p className='border-bottom pb-2'><i class="bi bi-box"></i> Repositories : </p>
-                      <p className='border-bottom pb-2'><i class="bi bi-people"></i> Followers : </p>
-                      <p><i class="bi bi-people"></i> Following : </p>
+                      <p className='border-bottom pb-2'><i class="bi bi-box"></i> Repositories : {userDataRepo.length}</p>
+                      <p className='border-bottom pb-2'><i class="bi bi-people"></i> Followers : {userDataFollo.length}</p>
+                      <p><i class="bi bi-people"></i> Following : {userDataFllg.length}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <div class="modal-footer border-0">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
               </div>
             </div>
           </div>
