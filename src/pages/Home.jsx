@@ -1,8 +1,23 @@
+import { useState , useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const Home = () => {
+  const [userData, setUserData] = useState([]); 
 
-  
+  useEffect(() => {
+
+    const  fetchUserData = async() => { 
+      const res = await  fetch("https://api.github.com/users/jeanniot-wdv"); 
+      const data = await res.json(); 
+      setUserData(data); 
+      }; 
+
+    fetchUserData (); 
+
+    return  () => { 
+      // Code de nettoyage (si nécessaire)
+     }; 
+  }, []); 
 
   return(
     <div>
@@ -21,7 +36,7 @@ const Home = () => {
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                
+                <h3>{userData.name}</h3>
               </div>
               <div class="modal-footer">
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
