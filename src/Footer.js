@@ -10,9 +10,9 @@ export default class Footer extends Component {
           <div>
             <Address />
             <div id="socials" className="d-flex fs-3 column-gap-3">
-              <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-github"></i></Link>
-              <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-twitter-x"></i></Link>
-              <Link to="" className="link-light link-opacity-50 link-opacity-100-hover"><i className="bi bi-linkedin"></i></Link>
+              <Link to="https://github.com/jeanniot-wdv" className="link-light link-opacity-50 link-opacity-100-hover" target="_blank"><i className="bi bi-github"></i></Link>
+              <Link to="https://x.com/?lang=fr" className="link-light link-opacity-50 link-opacity-100-hover" target="_blank"><i className="bi bi-twitter-x"></i></Link>
+              <Link to="https://www.linkedin.com/in/jeanniotwebdev" className="link-light link-opacity-50 link-opacity-100-hover" target="_blank"><i className="bi bi-linkedin"></i></Link>
             </div>
           </div>
           <nav className="">

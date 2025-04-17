@@ -42,3 +42,6 @@ address i{margin-right: 10px;}
   transform: scale(1.02);
   box-shadow: 0 0 10px gray;
 }
+#contact .form-control:hover{
+  box-shadow: 0 0 3px gray inset;;
+}
