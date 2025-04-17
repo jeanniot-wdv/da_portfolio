@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";import Header from "../Header";
-import Address from "../Address";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Address from "../components/Address";
 import Accordion from 'react-bootstrap/Accordion';
 
 const Mention = () => {

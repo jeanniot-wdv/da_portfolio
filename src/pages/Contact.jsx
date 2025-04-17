@@ -1,5 +1,6 @@
-import Header from "../Header";
-import Address from "../Address";
+import Header from "../components/Header";
+import Address from "../components/Address";
+
 import MyMap from "../Maps";
 
 const Contact = () => {
