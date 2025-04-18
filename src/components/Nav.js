@@ -8,9 +8,7 @@ export default class Nav extends Component {
       <header className="container-fluid gx-0 text-uppercase">
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark shadow px-5 fixed-top">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
-              <img src="./images/favicon_io/favicon-32x32.png" alt="Bootstrap" width="30" height="24" />
-            </Link>
+            <Link className="navbar-brand text-capitalize text-warning" to="/">MyPortfolio</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

@@ -12,7 +12,7 @@ const Portfolio = () => {
       <div className="container"> 
         <section id="portfolio" className="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center gy-4 mb-4">
           {projects.map((project) => (
-            <div className="col">
+            <div className="col" key={project.title}>
               <div className="card h-100">
                 <img src={project.image} className="card-img-top" alt={project.image} />
                 <div className="card-body">

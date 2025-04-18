@@ -1,7 +1,7 @@
 
 export default function Header(props) {
   return (
-    <div className="row d-flex flex-wrap justify-content-center">
+    <div className="d-flex flex-column align-items-center">
       <img className="img-fluid" src="./images/banner.jpg" alt="banner portfolio bleu"></img>
       <div className="text-center px-4 mt-4">
         <h1>{props.title}</h1>

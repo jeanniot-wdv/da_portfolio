@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 body {
   margin: 0;
-  margin-top: 56px;
+  margin-top: 62px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-brand{
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: normal;
 }
 
 h1, h2, h3, strong{font-weight: 600;}
@@ -40,7 +48,6 @@ address i{margin-right: 10px;}
 /******* EFFECTS *******/
 .card:hover{
   background-color: #efefef;
-  transform: scale(1.02);
   box-shadow: 0 0 10px gray;
 }
 #portfolio .btn:hover{
@@ -48,4 +55,19 @@ address i{margin-right: 10px;}
 }
 #contact .form-control:hover{
   box-shadow: 0 0 3px gray inset;;
+}
+
+/******* RESPONSIVE *******/
+@media screen and (max-width: 768px){
+
+  #intro strong{font-size: 2.5em;}
+  footer .d-flex{
+    flex-direction: column;
+    text-align: center;
+  }
+  #socials{
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
 }

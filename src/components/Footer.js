@@ -40,7 +40,7 @@ export default class Footer extends Component {
             <h3 className="fs-5 lh-base">Mes dernières réalisations</h3>
             <ul className="navbar-nav">
               {projects.map((project) => (
-                <li className="nav-item">
+                <li className="nav-item" key={project.title}>
                   <Link className="nav-link py-0" to="/Portfolio">{project.title}</Link>
                 </li>
                 ))

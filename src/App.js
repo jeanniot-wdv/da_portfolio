@@ -28,7 +28,7 @@ export default class App extends React.Component {
 
         <Nav />
 
-        <main className="container-fluid gx-0">
+        <main>
           <ScrollToTop>
             <Routes>
               <Route path="/" element={<Home/>}></Route>

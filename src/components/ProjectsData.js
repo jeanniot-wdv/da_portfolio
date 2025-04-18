@@ -1,4 +1,4 @@
-
+  
   const projects = [
     {
       image: "./images/portfolio/fresh-food.jpg",
