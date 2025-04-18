@@ -20,13 +20,14 @@ code {
 .bg-image{
   background-image: url("../public/images/hero-bg.jpg");
   background-size: cover;
-  height: 80vh;
+  height: 93.5vh;
 }
-#intro strong{font-size: 3em;}
+#intro strong{font-size: 3.5em;}
 #progress p{margin: 15px 0 0 0;}
 
 /******* CONTACT *******/
-#location a{color: black !important;}
+#mention a,
+#location a{color: #212529 !important;}
 #google-map{
   aspect-ratio: 4 / 3;
   width: 100%;

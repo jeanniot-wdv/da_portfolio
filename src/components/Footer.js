@@ -6,7 +6,7 @@ import projects from "./ProjectsData";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="container-fluid bg-dark bg-gradient navbar-dark p-4">
+      <footer className="container-fluid bg-dark navbar-dark p-4">
         <div className="d-flex text-white justify-content-around">
           <div>
             <Address />

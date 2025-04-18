@@ -5,7 +5,7 @@ import projects from "../components/ProjectsData";
 
 const Portfolio = () => {
   return(
-    <section>
+    <>
       <Header title="Mon portfolio"
       description="Voici quelques unes de mes réalisations"/>
 
@@ -18,7 +18,7 @@ const Portfolio = () => {
                 <div className="card-body">
                   <h2 className="card-title fs-5">{project.title}</h2>
                   <p className="card-text">{project.description}</p>
-                  <Link to={project.site} className="btn btn-primary">Voir le site</Link>
+                  <Link to={project.site} className="btn btn-secondary">Voir le site</Link>
                 </div>
                 <div className="card-footer">
                   <small className="text-body-secondary">{project.footer}</small>
@@ -29,7 +29,7 @@ const Portfolio = () => {
           }
         </section>
       </div>
-    </section>
+    </>
   )
 };
 
