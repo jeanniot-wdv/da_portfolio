@@ -5,14 +5,14 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const Mention = () => {
   return(
-    <div>
+    <div id="mention">
       <Header title="Mentions légales"
       description=""/>
       <div className="container pb-4">
 
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Editeur du site</Accordion.Header>
+            <Accordion.Header className="button-active-color-secondary">Editeur du site</Accordion.Header>
             <Accordion.Body><Address /></Accordion.Body>
           </Accordion.Item>
 

@@ -6,7 +6,7 @@ const Card = (props) => {
     <div className="col">
       <div className="card h-100">
         <div className="card-body">
-          <p className="text-primary pt-5 pb-4"><i className={icon}></i></p>
+          <p className="text-secondary pt-5 pb-4"><i className={icon}></i></p>
           <h2 className="card-title fs-4">{props.title}</h2>
           <p className="card-text">{props.description}</p>
         </div>
@@ -17,8 +17,7 @@ const Card = (props) => {
 
 const Services = () => {
   return(
-    <div>
-
+    <>
       <Header title="Mon offre de services"
       description="Voici les prestations sur lesquelles je peux intervenir"/>
 
@@ -40,10 +39,10 @@ const Services = () => {
             optimiser un site web pour le faire remonter dans les résultats des moteurs de 
             recherche (Google, Bing, Yahoo, etc.). L'objectif est d'attirer un maximum de 
             visiteurs qualifiés sur le site."/>
-          </div>
         </div>
       </div>
-    )
+    </>
+  )
 };
 
 export default Services;

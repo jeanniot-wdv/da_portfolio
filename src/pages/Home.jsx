@@ -29,12 +29,12 @@ const Home = () => {
     }, []);
 
   return(
-    <div>
+    <>
       <section id="intro" className="container-fluid bg-image d-flex justify-content-center align-items-center">
         <div className="text-white text-center">
           <p><strong>Bonjour, je suis Romain Jeanniot</strong></p>
           <h1>Développeur web Fullstack</h1>
-          <button type="button" className="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">En savoir plus</button>
+          <button type="button" className="btn btn-warning mt-4" data-bs-toggle="modal" data-bs-target="#myModal">En savoir plus</button>
         </div>
 
         <div className="modal fade border-opacity-25" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
@@ -74,10 +74,10 @@ const Home = () => {
 
       </section>
 
-      <section id="info-perso" className="container my-4">
+      <section id="info" className="container my-4">
         <div className="row rounded-4 shadow p-4">
           <section id="about" className="col-md-6">
-            <h2 className="border-bottom border-primary border-3">A propos</h2>
+            <h2 className="border-bottom border-secondary border-3">A propos</h2>
             <img className="img-fluid rounded-3 my-4" src="./images/john-doe-about.jpg" alt="john doe bureau"></img>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem 
               perferendis non, vel in est, possimus commodi veritatis nobis, amet 
@@ -89,7 +89,7 @@ const Home = () => {
           </section>
 
           <section id="progress" className="col-md-6">
-            <h2 className="border-bottom border-primary border-3 mb-4">Mes compétences</h2>
+            <h2 className="border-bottom border-secondary border-3 mb-4">Mes compétences</h2>
             <p>HTML 5</p>
             <ProgressBar variant="success" now={70} label={`${70}%`}/>
             <p>CSS 3</p>
@@ -103,7 +103,7 @@ const Home = () => {
           </section>
         </div> 
       </section>
-    </div>
+    </>
   )
 };
 
