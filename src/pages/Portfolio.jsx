@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import { Title, Meta } from "react-head";
 
 import projects from "../components/ProjectsData";
 
 const Portfolio = () => {
   return(
     <>
+      <Title>Mon Portfolio | Romain Jeanniot Portfolio</Title>
+      <Meta name="description" content="Voici quelques unes de mes réalisations"></Meta>
+
       <Header title="Mon portfolio"
       description="Voici quelques unes de mes réalisations"/>
 

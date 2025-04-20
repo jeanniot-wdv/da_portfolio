@@ -1,3 +1,5 @@
+import { Title, Meta } from "react-head";
+
 import Header from "../components/Header";
 
 const Card = (props) => {
@@ -18,6 +20,9 @@ const Card = (props) => {
 const Services = () => {
   return(
     <>
+      <Title>Mon offre de services | Romain Jeanniot Portfolio</Title>
+      <Meta name="description" content="Voici les prestations sur lesquelles je peux intervenir"></Meta>
+
       <Header title="Mon offre de services"
       description="Voici les prestations sur lesquelles je peux intervenir"/>
 

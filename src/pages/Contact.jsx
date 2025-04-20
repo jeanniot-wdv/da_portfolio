@@ -1,3 +1,5 @@
+import { Title, Meta } from "react-head";
+
 import Header from "../components/Header";
 import Address from "../components/Address";
 
@@ -6,6 +8,11 @@ import MyMap from "../components/Maps";
 const Contact = () => {
   return(
     <>
+      <Title>Contactez moi | Romain Jeanniot Portfolio</Title>
+      <Meta name="description" content="Pour me contacter en vue d'un entretien ou 
+      d'une futur collaboration, merci de remplir ce formulaire.">
+      </Meta>
+    
       <Header title="Contactez moi" 
       description="Pour me contacter en vue d'un entretien ou 
       d'une futur collaboration, merci de remplir ce formulaire."/>
