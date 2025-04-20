@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# da_portfolio 🚀✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Mon portfolio personnel / My personal portfolio  
+> Built with ❤️ using **React** & **Bootstrap 5**
 
-## Available Scripts
+![GitHub repo size](https://img.shields.io/github/repo-size/jeanniot-wdv/da_portfolio)
+![GitHub last commit](https://img.shields.io/github/last-commit/jeanniot-wdv/da_portfolio)
+![GitHub issues](https://img.shields.io/github/issues/jeanniot-wdv/da_portfolio)
+![GitHub stars](https://img.shields.io/github/stars/jeanniot-wdv/da_portfolio?style=social)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🗂 Sommaire / Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [🇫🇷 Français](#-français)
+  - [Aperçu](#aperçu)
+  - [Technologies](#technologies)
+  - [Fonctionnalités](#fonctionnalités)
+  - [Installation](#installation)
+  - [Lancement](#lancement)
+  - [Projets](#projets)
+  - [Contact](#contact)
+- [🇬🇧 English](#-english)
+  - [Overview](#overview)
+  - [Technologies](#technologies-1)
+  - [Features](#features)
+  - [Installation](#installation-1)
+  - [Run locally](#run-locally)
+  - [Projects](#projects)
+  - [Contact](#contact-1)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🇫🇷 Français
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔍 Aperçu
 
-### `npm run build`
+Bienvenue sur mon portfolio !  
+Un site vitrine responsive et moderne pour découvrir mes projets, compétences et expériences.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛠️ Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ⚛️ React 18.31
+- 🎨 Bootstrap 5
+- 🧠 HTML5 / CSS3 / JavaScript (ES6+)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✨ Fonctionnalités
 
-### `npm run eject`
+- Présentation personnelle
+- Galerie de projets
+- Compétences techniques & soft skills
+- Formulaire de contact
+- Design responsive (mobile first)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📦 Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/jeanniot-wdv/da_portfolio.git
+cd da_portfolio
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ▶️ Lancement
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Accessible sur [http://localhost:3000](http://localhost:3000)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🧩 Projets
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Chaque projet contient :
+- Une capture d’écran
+- Une description courte
+- Les technos utilisées
+- Un lien vers la démo ou le code
 
-### Code Splitting
+### 📬 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Formulaire intégré dans le site ou en direct :
 
-### Analyzing the Bundle Size
+- Email : [romainjeanniot@dev.com]
+- LinkedIn : [https://www.linkedin.com/in/jeanniotwebdev/]
+- GitHub : [https://github.com/jeanniot-wdv]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🇬🇧 English
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🔍 Overview
 
-### Advanced Configuration
+Welcome to my personal portfolio!  
+A responsive & modern site to showcase my projects, skills and experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🛠️ Technologies
 
-### Deployment
+- ⚛️ React 18.31
+- 🎨 Bootstrap 5
+- 🧠 HTML5 / CSS3 / JavaScript (ES6+)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### ✨ Features
 
-### `npm run build` fails to minify
+- Personal introduction
+- Project gallery
+- Tech & soft skills
+- Contact form
+- Responsive design (mobile first)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 📦 Installation
+
+```bash
+git clone https://github.com/your-username/da_portfolio.git
+cd da_portfolio
+npm install
+```
+
+### ▶️ Run locally
+
+```bash
+npm start
+```
+
+Accessible at [http://localhost:3000](http://localhost:3000)
+
+### 🧩 Projects
+
+Each project includes:
+- A screenshot
+- A short description
+- Tech stack used
+- Link to demo or code
+
+### 📬 Contact
+
+Use the form on the site, or reach out directly:
+
+- Email : [romainjeanniot@dev.com]
+- LinkedIn : [https://www.linkedin.com/in/jeanniotwebdev/]
+- GitHub : [https://github.com/jeanniot-wdv]
+
+---
+
+Made with love, coffee & React ⚛️  
+**[Romain]**
