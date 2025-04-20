@@ -2,10 +2,15 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Address from "../components/Address";
 import Accordion from 'react-bootstrap/Accordion';
+import { Title, Meta } from "react-head";
 
 const Mention = () => {
   return(
-    <div id="mention">
+    <>
+      <Title>Mentions légales | Romain Jeanniot Portfolio</Title>
+      <Meta name="robots" content="noindex, nofollow"></Meta>
+
+      <div id="mention">
       <Header title="Mentions légales"
       description=""/>
       <div className="container pb-4">
@@ -39,6 +44,7 @@ const Mention = () => {
         </Accordion>
       </div>
     </div>
+    </>
   )
 };
 

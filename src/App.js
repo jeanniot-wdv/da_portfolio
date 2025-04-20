@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { HeadProvider } from "react-head";
 
 import Nav from "./components//Nav";
 import Footer from "./components/Footer";
@@ -9,6 +10,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Mention from "./pages/Mention";
+
 
 const ScrollToTop = ({ children }) => {
   const location = useLocation();
@@ -24,11 +26,12 @@ const ScrollToTop = ({ children }) => {
 export default class App extends React.Component {
   render() {
     return (
+      <HeadProvider>
       <div className="App">
 
         <Nav />
 
-        <main className="container-fluid gx-0">
+        <main>
           <ScrollToTop>
             <Routes>
               <Route path="/" element={<Home/>}></Route>
@@ -43,6 +46,7 @@ export default class App extends React.Component {
         <Footer />
 
       </div>
+      </HeadProvider>
     )
   };
 }

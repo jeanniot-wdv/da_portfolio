@@ -1,6 +1,7 @@
 import { useState , useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Link } from 'react-router-dom';
+import { Title, Meta } from "react-head";
 
 const Home = () => {
   const [userData, setUserData] = useState([]); 
@@ -30,7 +31,11 @@ const Home = () => {
 
   return(
     <>
-      <section id="intro" className="container-fluid bg-image d-flex justify-content-center align-items-center">
+      <Title>Romain Jeanniot Portfolio</Title>
+      <Meta name="description" content="Bienvenue sur mon site Portfolio">
+      </Meta>
+
+      <section id="intro" className="d-flex bg-image justify-content-center align-items-center">
         <div className="text-white text-center">
           <p><strong>Bonjour, je suis Romain Jeanniot</strong></p>
           <h1>Développeur web Fullstack</h1>
