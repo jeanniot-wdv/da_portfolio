@@ -1,45 +1,145 @@
-<h1 align="center">Welcome to portfolio 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/portfolio" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/portfolio.svg">
-  </a>
-</p>
+# da_portfolio 🚀✨
 
-> My portfolio site. Find my IT development skills here. View the projects I've completed. Feel free to contact me.
+> Mon portfolio personnel / My personal portfolio  
+> Built with ❤️ using **React** & **Bootstrap 5**
 
-## Install
+![GitHub repo size](https://img.shields.io/github/repo-size/jeanniot-wdv/da_portfolio)
+![GitHub last commit](https://img.shields.io/github/last-commit/jeanniot-wdv/da_portfolio)
+![GitHub issues](https://img.shields.io/github/issues/jeanniot-wdv/da_portfolio)
+![GitHub stars](https://img.shields.io/github/stars/jeanniot-wdv/da_portfolio?style=social)
 
-```sh
+---
+
+## 🗂 Sommaire / Table of Contents
+
+- [🇫🇷 Français](#-français)
+  - [Aperçu](#aperçu)
+  - [Technologies](#technologies)
+  - [Fonctionnalités](#fonctionnalités)
+  - [Installation](#installation)
+  - [Lancement](#lancement)
+  - [Projets](#projets)
+  - [Contact](#contact)
+- [🇬🇧 English](#-english)
+  - [Overview](#overview)
+  - [Technologies](#technologies-1)
+  - [Features](#features)
+  - [Installation](#installation-1)
+  - [Run locally](#run-locally)
+  - [Projects](#projects)
+  - [Contact](#contact-1)
+
+---
+
+## 🇫🇷 Français
+
+### 🔍 Aperçu
+
+Bienvenue sur mon portfolio !  
+Un site vitrine responsive et moderne pour découvrir mes projets, compétences et expériences.
+
+### 🛠️ Technologies
+
+- ⚛️ React 18.31
+- 🎨 Bootstrap 5
+- 🧠 HTML5 / CSS3 / JavaScript (ES6+)
+
+### ✨ Fonctionnalités
+
+- Présentation personnelle
+- Galerie de projets
+- Compétences techniques & soft skills
+- Formulaire de contact
+- Design responsive (mobile first)
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/jeanniot-wdv/da_portfolio.git
+cd da_portfolio
 npm install
 ```
 
-## Usage
+### ▶️ Lancement
 
-```sh
+```bash
 npm start
 ```
 
-## Run tests
+Accessible sur [http://localhost:3000](http://localhost:3000)
 
-```sh
-npm run test
+### 🧩 Projets
+
+Chaque projet contient :
+- Une capture d’écran
+- Une description courte
+- Les technos utilisées
+- Un lien vers la démo ou le code
+
+### 📬 Contact
+
+Formulaire intégré dans le site ou en direct :
+
+- Email : [romainjeanniot@dev.com]
+- LinkedIn : [https://www.linkedin.com/in/jeanniotwebdev/]
+- GitHub : [https://github.com/jeanniot-wdv]
+
+---
+
+## 🇬🇧 English
+
+### 🔍 Overview
+
+Welcome to my personal portfolio!  
+A responsive & modern site to showcase my projects, skills and experience.
+
+### 🛠️ Technologies
+
+- ⚛️ React 18.31
+- 🎨 Bootstrap 5
+- 🧠 HTML5 / CSS3 / JavaScript (ES6+)
+
+### ✨ Features
+
+- Personal introduction
+- Project gallery
+- Tech & soft skills
+- Contact form
+- Responsive design (mobile first)
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/your-username/da_portfolio.git
+cd da_portfolio
+npm install
 ```
 
-## Author
+### ▶️ Run locally
 
-👤 **Romain Jeanniot**
+```bash
+npm start
+```
 
-* Website: Romain Jeanniot
-* Github: [@jeanniot-wdv](https://github.com/jeanniot-wdv)
-* LinkedIn: [@jeanniotwebdev](https://linkedin.com/in/jeanniotwebdev)
+Accessible at [http://localhost:3000](http://localhost:3000)
 
-## 🤝 Contributing
+### 🧩 Projects
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jeanniot-wdv/da_portfolio/issues?q=is%3Aissue%20state%3Aclosed). 
+Each project includes:
+- A screenshot
+- A short description
+- Tech stack used
+- Link to demo or code
 
-## Show your support
+### 📬 Contact
 
-Give a ⭐️ if this project helped you!
+Use the form on the site, or reach out directly:
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+- Email : [romainjeanniot@dev.com]
+- LinkedIn : [https://www.linkedin.com/in/jeanniotwebdev/]
+- GitHub : [https://github.com/jeanniot-wdv]
+
+---
+
+Made with love, coffee & React ⚛️  
+**[Romain]**

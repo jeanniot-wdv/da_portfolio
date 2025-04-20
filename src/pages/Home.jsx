@@ -11,19 +11,21 @@ const Home = () => {
 
   useEffect(() => {
 
+    //Lecture et stockage des API GitHub pour modal
     const  getUserData = async() => { 
-      const res = await  fetch("https://api.github.com/users/jeanniot-wdv");
-      const data = await res.json(); 
-      const resRepo = await  fetch("https://api.github.com/users/jeanniot-wdv/repos");
-      const dataRepo = await resRepo.json(); 
-      const resFollo = await  fetch("https://api.github.com/users/jeanniot-wdv/followers");
-      const dataFollo = await resFollo.json(); 
-      const resFllg = await  fetch("https://api.github.com/users/jeanniot-wdv/following");
-      const dataFllg = await resFllg.json(); 
-      setUserData(data); 
-      setUserDataRepo(dataRepo); 
-      setUserDataFollo(dataFollo); 
-      setUserDataFllg(dataFllg); 
+    const res = await  fetch("https://api.github.com/users/jeanniot-wdv");
+    const data = await res.json(); 
+    const resRepo = await  fetch("https://api.github.com/users/jeanniot-wdv/repos");
+    const dataRepo = await resRepo.json(); 
+    const resFollo = await  fetch("https://api.github.com/users/jeanniot-wdv/followers");
+    const dataFollo = await resFollo.json(); 
+    const resFllg = await  fetch("https://api.github.com/users/jeanniot-wdv/following");
+    const dataFllg = await resFllg.json(); 
+
+    setUserData(data); 
+    setUserDataRepo(dataRepo); 
+    setUserDataFollo(dataFollo); 
+    setUserDataFllg(dataFllg); 
       }; 
     getUserData (); 
 
@@ -49,7 +51,7 @@ const Home = () => {
                 <h1 className="modal-title fs-5" id="modalLabel">Mon profil GitHub</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 <div className='container-fluid'>
                   <div className='row'>
                     <div className='col-md-6'>
@@ -57,7 +59,7 @@ const Home = () => {
                     </div>
                     <div className='col-md-6'>
                       <p className='border-bottom mt-4 pb-2'>
-                        <i class="bi bi-person"></i> 
+                        <i className="bi bi-person"></i> 
                         <Link to="https://github.com/jeanniot-wdv" target='_blank'>{userData.name}</Link>
                       </p>
                       <p className='border-bottom pb-2'><i class="bi bi-geo-alt"></i> {userData.location}</p>
