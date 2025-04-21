@@ -114,7 +114,7 @@ A responsive & modern site to showcase my projects, skills and experience.
 ### 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/da_portfolio.git
+git clone https://github.com/jeanniot-wdv/da_portfolio.git
 cd da_portfolio
 npm install
 ```
