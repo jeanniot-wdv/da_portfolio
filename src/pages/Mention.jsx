@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
+import TopTitle from "../components/Title";
 import Address from "../components/Address";
 import Accordion from 'react-bootstrap/Accordion';
 import { Title, Meta } from "react-head";
@@ -7,12 +7,13 @@ import { Title, Meta } from "react-head";
 const Mention = () => {
   return(
     <>
+      {/* Titre de l'onglet de la page */}
       <Title>Mentions légales | Romain Jeanniot Portfolio</Title>
-       {/* Balise meta pour empêcher l'indexation par les moteurs de recherche */}
+      {/* Balise meta pour empêcher l'indexation par les moteurs de recherche */}
       <Meta name="robots" content="noindex, nofollow"></Meta>
 
       <div id="mention">
-      <Header title="Mentions légales"
+      <TopTitle title="Mentions légales"
       description=""/>
       <div className="container pb-4">
 

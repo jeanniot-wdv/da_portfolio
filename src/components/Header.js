@@ -1,13 +1,39 @@
+import { Component } from "react";
+import { Link, NavLink } from "react-router-dom";
 
-export default function Header(props) {
-  return (
-    <div className="d-flex flex-column align-items-center">
-      <img className="img-fluid" src="./images/banner.jpg" alt="banner portfolio bleu"></img>
-      <div className="text-center px-4 mt-4">
-        <h1>{props.title}</h1>
-        <p className="mb-4">{props.description}</p>
-      </div>
-      <div className="border-bottom border-secondary border-3 w-25 mb-4"></div>
-    </div>
-  )
+
+export default class Header extends Component {
+  render() {
+    return (
+      <header className="container-fluid gx-0 text-uppercase">
+        <nav className="navbar navbar-expand-lg bg-dark navbar-dark shadow px-5 fixed-top">
+          <div className="container-fluid">
+            <Link className="navbar-brand text-capitalize text-warning" to="/">MyPortfolio</Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                    <NavLink className="nav-link" aria-current="page" to="/">Accueil</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink className="nav-link" to="/services">Services</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink className="nav-link" to="/mention">Mentions légales</NavLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    )
+  }
 }

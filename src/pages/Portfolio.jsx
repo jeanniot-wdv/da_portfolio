@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
+import TopTitle from "../components/Title";
 import { Title, Meta } from "react-head";
 
 import projects from "../components/ProjectsData";
@@ -7,10 +7,12 @@ import projects from "../components/ProjectsData";
 const Portfolio = () => {
   return(
     <>
+      {/* Titre de l'onglet de la page */}
       <Title>Mon Portfolio | Romain Jeanniot Portfolio</Title>
+      {/* Meta description pour le SEO */}
       <Meta name="description" content="Voici quelques unes de mes réalisations"></Meta>
 
-      <Header title="Mon portfolio"
+      <TopTitle title="Mon portfolio"
       description="Voici quelques unes de mes réalisations"/>
 
       <div className="container"> 
