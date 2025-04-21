@@ -8,6 +8,7 @@ const Mention = () => {
   return(
     <>
       <Title>Mentions légales | Romain Jeanniot Portfolio</Title>
+       {/* Balise meta pour empêcher l'indexation par les moteurs de recherche */}
       <Meta name="robots" content="noindex, nofollow"></Meta>
 
       <div id="mention">

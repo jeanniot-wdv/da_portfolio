@@ -38,6 +38,10 @@
 Bienvenue sur mon portfolio !  
 Un site vitrine responsive et moderne pour découvrir mes projets, compétences et expériences.
 
+![Home Screenshot](./public/screenshots/home.png)
+
+![Projects Screenshot](./public/screenshots/projects.png)
+
 ### 🛠️ Technologies
 
 - ⚛️ React 18.31

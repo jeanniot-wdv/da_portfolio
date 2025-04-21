@@ -1,4 +1,5 @@
   
+  // Liste des projets variable globale
   const projects = [
     {
       image: "./images/portfolio/fresh-food.jpg",

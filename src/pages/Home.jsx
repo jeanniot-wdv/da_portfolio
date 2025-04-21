@@ -4,36 +4,42 @@ import { Link } from 'react-router-dom';
 import { Title, Meta } from "react-head";
 
 const Home = () => {
+  // États pour stocker les données récupérées depuis l'API GitHub
   const [userData, setUserData] = useState([]); 
   const [userDataRepo, setUserDataRepo] = useState([]); 
   const [userDataFollo, setUserDataFollo] = useState([]); 
   const [userDataFllg, setUserDataFllg] = useState([]); 
 
   useEffect(() => {
-
-    //Lecture et stockage des API GitHub pour modal
+    // Fonction pour récupérer les données GitHub
     const  getUserData = async() => { 
     const res = await  fetch("https://api.github.com/users/jeanniot-wdv");
     const data = await res.json(); 
+
     const resRepo = await  fetch("https://api.github.com/users/jeanniot-wdv/repos");
     const dataRepo = await resRepo.json(); 
+
     const resFollo = await  fetch("https://api.github.com/users/jeanniot-wdv/followers");
     const dataFollo = await resFollo.json(); 
+
     const resFllg = await  fetch("https://api.github.com/users/jeanniot-wdv/following");
     const dataFllg = await resFllg.json(); 
 
+    // Mise à jour des états avec les données récupérées
     setUserData(data); 
     setUserDataRepo(dataRepo); 
     setUserDataFollo(dataFollo); 
     setUserDataFllg(dataFllg); 
-      }; 
+    }; 
     getUserData (); 
 
     }, []);
 
   return(
     <>
+      {/* Titre de l'onglet de la page */}
       <Title>Romain Jeanniot Portfolio</Title>
+      {/* Meta description pour le SEO */}
       <Meta name="description" content="Bienvenue sur mon site Portfolio">
       </Meta>
 
