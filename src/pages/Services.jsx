@@ -1,6 +1,6 @@
 import { Title, Meta } from "react-head";
 
-import Header from "../components/Header";
+import TopTitle from "../components/Title";
 
 const Card = (props) => {
   // Construction dynamique de la classe d'icône Bootstrap
@@ -21,10 +21,12 @@ const Card = (props) => {
 const Services = () => {
   return(
     <>
+      {/* Titre de l'onglet de la page */}
       <Title>Mon offre de services | Romain Jeanniot Portfolio</Title>
+      {/* Meta description pour le SEO */}
       <Meta name="description" content="Voici les prestations sur lesquelles je peux intervenir"></Meta>
 
-      <Header title="Mon offre de services"
+      <TopTitle title="Mon offre de services"
       description="Voici les prestations sur lesquelles je peux intervenir"/>
 
       <div className="container">

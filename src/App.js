@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { HeadProvider } from "react-head";
 
-import Nav from "./components//Nav";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
@@ -31,7 +31,7 @@ export default class App extends React.Component {
       <HeadProvider>
       <div className="App">
 
-        <Nav />
+        <Header />
 
         <main>
           {/* Gestion du scroll à chaque changement de page */}
