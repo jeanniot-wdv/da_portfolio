@@ -3,6 +3,7 @@ import { Title, Meta } from "react-head";
 import Header from "../components/Header";
 
 const Card = (props) => {
+  // Construction dynamique de la classe d'icône Bootstrap
   const icon = "fs-1 bi bi-"+ props.iconName;
   return (
     <div className="col">

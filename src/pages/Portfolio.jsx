@@ -15,6 +15,7 @@ const Portfolio = () => {
 
       <div className="container"> 
         <section id="portfolio" className="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center gy-4 mb-4">
+          {/* Parcours dynamique de la liste des projets */}
           {projects.map((project) => (
             <div className="col" key={project.title}>
               <div className="card h-100">

@@ -11,28 +11,32 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Mention from "./pages/Mention";
 
-
+// Composant permettant de remonter en haut de la page 
+// à chaque changement de route
 const ScrollToTop = ({ children }) => {
   const location = useLocation();
 
   useLayoutEffect(() => {
-    // Scroll en haut de page quand route change
+    // Lorsque l'URL change, on remonte automatiquement en haut de la page
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [location.pathname]);
 
-  return children;
+  return children; // On retourne les routes inchangées
 };
 
 export default class App extends React.Component {
   render() {
     return (
+      // Fournisseur de balises <head> dynamiques (ex: titre, meta tags...)
       <HeadProvider>
       <div className="App">
 
         <Nav />
 
         <main>
+          {/* Gestion du scroll à chaque changement de page */}
           <ScrollToTop>
+              {/* Définition des routes principales */}
             <Routes>
               <Route path="/" element={<Home/>}></Route>
               <Route path="/Services" element={<Services/>}></Route>
